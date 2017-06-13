@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name Make test file
+      file:
+      path: /Users/dstirling/tmp/foo.conf
+      state: touch
+      mode: "u=rw,g=r,o=rq
